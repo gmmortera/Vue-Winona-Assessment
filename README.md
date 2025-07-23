@@ -7,7 +7,7 @@ This assignment shouldn't take more than an hour and should give us a feeling fo
 
 ## Tasks
 
-1. After starting the app you will see a very basic dashboard with a hard coded list of doctors. Make this list dynamic by fetching a list of doctors from `https://v23l6u6a3qrlk6k3sweaql3chm0iaayj.lambda-url.us-west-2.on.aws/`. Use the `Authentication` header with the following value: `Bearer dGhpcyBpcyBzdXBlciBzYWZlLiBqdXN0IHRydXN0IG1lLiBoZWhl`.
+1. After starting the app you will see a very basic dashboard with a hard coded list of doctors. Make this list dynamic by fetching a list of doctors from `https://v23l6u6a3qrlk6k3sweaql3chm0iaayj.lambda-url.us-west-2.on.aws/`. Use the `Authentication` header with the following value: `Bearer dGhpcyBpcyBzdXBlciBzYWZlLiBqdXN0IHRydXN0IG1lLiBoZWhl`. Don't forget to handle authentication errors.
 
 2. List the first names, last names and the state of each doctor.
 
