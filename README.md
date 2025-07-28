@@ -15,6 +15,8 @@ This assignment shouldn't take more than an hour and should give us a feeling fo
 
 4. Make the dark mode toggle in the header working and also add one to the footer.
 
+5. If possble, add a test case for one component. It's on your discretion how detailed the test is implemented and which test suite to pick.
+
 # Tech Stack & notes
 
 The main app is Vue 3.
