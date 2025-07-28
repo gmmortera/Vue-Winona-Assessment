@@ -17,7 +17,7 @@ This assignment shouldn't take more than an hour and should give us a feeling fo
 
 5. If possble, add a test case for one component. It's on your discretion how detailed the test is implemented and which test suite to pick.
 
-# Sendin in the assignment
+# Sending in the assignment
 Please clone this repository and work with the copy as you would do in a real project. Finally push it to your Github or Gitlab account and send the HR representative the link to the repository.
 
 # Tech Stack & notes
