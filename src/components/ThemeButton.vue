@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <li>
     <label class="swap swap-rotate">

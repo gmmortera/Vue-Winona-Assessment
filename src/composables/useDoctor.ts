@@ -1,4 +1,4 @@
-import type { Doctor, DoctorsResponse } from "@/types/doctor"
+import type { Doctor, DoctorsResponse } from '@/types/doctor'
 
 export const useDoctor = () => {
   const isDoctor = (obj: any): obj is Doctor => {

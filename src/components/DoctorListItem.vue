@@ -1,3 +1,17 @@
+<script lang="ts" setup>
+import type { Doctor } from '@/types/doctor'
+import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+
+interface Props {
+  doctor: Doctor
+}
+
+defineProps<Props>()
+
+const isOpen = ref(false)
+</script>
+
 <template>
   <li class="list-row">
     <div></div>
@@ -24,17 +38,3 @@
     </div>
   </li>
 </template>
-
-<script lang="ts" setup>
-import type { Doctor } from '@/types/doctor'
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router';
-
-interface Props {
-  doctor: Doctor
-}
-
-defineProps<Props>()
-
-const isOpen = ref(false)
-</script>

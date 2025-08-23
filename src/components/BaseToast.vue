@@ -1,3 +1,17 @@
+<script lang="ts" setup>
+interface Props {
+  conditionalValue: boolean
+  message: string | null
+}
+
+interface Emits {
+  'click': []
+}
+
+defineProps<Props>()
+defineEmits<Emits>()
+</script>
+
 <template>
   <Teleport to="body">
     <div
@@ -16,17 +30,3 @@
     </div>
   </Teleport>  
 </template>
-
-<script lang="ts" setup>
-interface Props {
-  conditionalValue: boolean
-  message: string | null
-}
-
-interface Emits {
-  'click': []
-}
-
-defineProps<Props>()
-defineEmits<Emits>()
-</script>

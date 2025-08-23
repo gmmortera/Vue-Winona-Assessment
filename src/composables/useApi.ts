@@ -1,4 +1,4 @@
-type FetchMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE"
+type FetchMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
 
 export const useApi = () => {
   const baseUrl = import.meta.env.DEV 
@@ -8,7 +8,7 @@ export const useApi = () => {
 
   const request = async <T = any>(
     endpoint: string,
-    method: FetchMethod = "GET",
+    method: FetchMethod = 'GET',
     body?: any
   ) => {
     try {

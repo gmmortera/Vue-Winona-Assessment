@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import ThemeButton from "./components/ThemeButton.vue";
-import { useDoctorStore } from "./stores/useDoctorStore";
-import BaseToast from "./components/BaseToast.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import ThemeButton from '@/components/ThemeButton.vue'
+import { useDoctorStore } from '@/stores/useDoctorStore'
+import BaseToast from '@/components/BaseToast.vue'
 
 const doctorStore = useDoctorStore()
 </script>

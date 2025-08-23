@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+import type { Doctor } from '@/types/doctor'
+
+interface Props {
+  doctor: Doctor | undefined
+}
+
+defineProps<Props>()
+</script>
+
 <template>
   <div class="space-y-2">
     <h3 class="font-bold text-xl">State</h3>
@@ -22,13 +32,3 @@
     <p>{{ doctor?.signedUpDate }}</p>
   </div>
 </template>
-
-<script lang="ts" setup>
-import type { Doctor } from '@/types/doctor';
-
-interface Props {
-  doctor: Doctor | undefined
-}
-
-defineProps<Props>()
-</script>

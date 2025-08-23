@@ -1,8 +1,8 @@
-import { defineStore } from "pinia"
-import { useApi } from "@/composables/useApi"
-import { useDoctor } from "@/composables/useDoctor"
-import { ref } from "vue"
-import type { Doctor } from "@/types/doctor"
+import { defineStore } from 'pinia'
+import { useApi } from '@/composables/useApi'
+import { useDoctor } from '@/composables/useDoctor'
+import { ref } from 'vue'
+import type { Doctor } from '@/types/doctor'
 
 export const useDoctorStore = defineStore('doctors', () => {
   const api = useApi()
