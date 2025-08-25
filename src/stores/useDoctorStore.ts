@@ -19,13 +19,14 @@ export const useDoctorStore = defineStore('doctors', () => {
     try {
       const response = await api.get<Doctor[]>()
       
-      if (!doctorGuard.isDoctorsResponse(response)) throw new Error('Invalid response type')
+      if (!doctorGuard.isDoctorsResponse(response)) throw new Error('Failed to fetch doctors')
 
       if (response) {
         doctors.value = response
       }
     } catch (err) {
-      error.value = 'Failed to fetch doctors'
+      const errorMessage = err as Error
+      error.value = errorMessage.message
       console.error(err, error.value)
     } finally {
       loading.value = false

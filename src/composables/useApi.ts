@@ -24,7 +24,13 @@ export const useApi = () => {
 
       const response = await fetch(`${baseUrl}${endpoint}`, options)
 
-      if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+      if (!response.ok) {
+        
+        if (response.status === 500) throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+
+        const errorMessage = await response.json() as { message: string }
+        throw new Error(errorMessage.message)
+      }
 
       return await response.json()
     } catch (error) {
